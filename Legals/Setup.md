@@ -18,7 +18,7 @@
 - After the <Assembly: AssemblyTradmark(...) line, add  <Assembly: TagPrefix("[Root Namespace]", "WC")>
 - After the <Assembly: AssemblyFileVersion(...) line add the following lines:
 
-- <Assembly: System.Web.UI.WebResource("[Root Namespace].DragList.js", "text/javascript")>
+-- <Assembly: System.Web.UI.WebResource("[Root Namespace].DragList.js", "text/javascript")>
 - <Assembly: System.Web.UI.WebResource("[Root Namespace].DragList.css", "text/css")>
 - <Assembly: System.Web.UI.WebResource("[Root Namespace].MessageControl.js", "text/javascript")>
 - <Assembly: System.Web.UI.WebResource("[Root Namespace].MessageControl.css", "text/css")>
