@@ -4,7 +4,6 @@
 - Windows
 - .NET Framework
 
-
 ## Steps
 1. Download WebControlsAI project zip file
 2. Extract the zip file
