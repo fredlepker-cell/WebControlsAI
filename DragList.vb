@@ -373,7 +373,7 @@ Public Class DragList
                 Else
                     If IsNumeric(value) AndAlso Not value.StartsWith("-") AndAlso Not value.Contains(".") Then
                         Dim val As Integer = CInt(value)
-                        If val <DragItems.Items.Length Then
+                        If val < DragItems.Items.Length Then
                             ViewState("SelectedIndex") = value
                         Else
                             ViewState("SelectedIndex") = "-1"
@@ -461,7 +461,7 @@ Public Class DragList
     End Function
     Private Sub EmbedStyleSheet(ThisType As Type)
         If Not Me.DesignMode Then
-            Dim cssURL As String = Page.ClientScript.GetWebResourceUrl(ThisType, "MyWebControls.DragList.css")
+            Dim cssURL As String = Page.ClientScript.GetWebResourceUrl(ThisType, ThisType.Namespace & ".DragList.css")
             Dim csm As ClientScriptManager = Page.ClientScript
             Dim cssLink As New HTC.HtmlLink
             cssLink.Href = cssURL
@@ -778,6 +778,3 @@ Public Class DragList
 #End Region
 
 End Class
-
-
-
